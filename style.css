@@ -1,0 +1,12 @@
+*{
+    text-align: center;
+    background-color: beige;
+    color:blue;
+}
+h1{
+    font-size: 30px;
+}
+p{
+    font-style: italic;
+    font-weight:200;
+}
