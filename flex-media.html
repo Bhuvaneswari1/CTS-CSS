@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    text-align: center;
+}
+.column1 {
+    /* width takes 20% of the flex container */
+    width: 20%;
+    background-color: orange;
+}
+
+.column2 {
+    /* width takes 60% of the flex container */
+    width: 60%;
+    background-color: yellow;
+}
+
+.column3 {
+    /* width takes 20% of the flex container */
+    width: 20%;
+    background-color: greenyellow;
+}
+header,
+footer {
+    background-color: pink;
+    text-align: center;
+}
+footer{
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 768px) {
+/* set column1 and column2 to 50% width each */
+    .column1,
+    .column2 {
+        width: 50%;
+    }
+
+/* set column3 to 100% width */
+    .column3 {
+        width: 100%;
+    }
+    footer{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .column1,
+    .column2,
+    .column3{
+        width:100%;
+    }
+    footer{
+        margin-top: 365px;;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+        <main>
+            <div class="column column1">
+                Example Hooks 
+The type definitions from @types/react include types for the built-in Hooks, so you can use them in your components without any additional setup. They are built to take into account the code you write in your component, so you will get inferred types a lot of the time and ideally do not need to handle the minutiae of providing the types.
+
+However, we can look at a few examples of how to provide types for Hooks.
+            </div>
+            <div class="column column2">Writing TypeScript with React is very similar to writing JavaScript with React. The key difference when working with a component is that you can provide types for your component’s props. These types can be used for correctness checking and providing inline documentation in editors.</div>
+            <div class="column column3">The following compiler options need to be set in your tsconfig.json:
+
+dom must be included in lib (Note: If no lib option is specified, dom is included by default).
+jsx must be set to one of the valid options. preserve should suffice for most applications. If you’re publishing a library, consult the jsx documentation on what value to choose.</div>
+        </main>
+        <footer>FOOTER</footer>
+
+</body>
+</html>
