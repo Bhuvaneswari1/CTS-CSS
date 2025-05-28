@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Width</title>
+    <style>
+        p.one{
+            border-style: solid;
+            border-width: 5px;
+            border-color: red green blue yellow;
+            /* red top, green right, blue bottom and yellow left */
+        }
+        .two{
+            border-style: solid;
+            border-width: medium;
+            border-color: green;
+        }
+        .three{
+            border-style: dotted;
+            border-width: 2px;
+            border-color: blue;
+        }
+        .four{
+            border-style: dotted;
+            border-color: gray;
+            border-width : thick;
+        }
+        .five{
+            border-style: double;
+            border-width: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders</p>
+
+    <p class="one">One text</p>
+    <p class="two">Two text</p>
+    <p class="three">Three text</p>
+    <p class="four">Four text</p>
+    <p class="five">Five text</p>
+
+    <p><b>Note:</b> The "border-color" property does not work if it is used 
+        alone. Use the "border-style" property to set the borders first.</p>
+
+</body>
+</html>
